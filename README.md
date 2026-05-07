@@ -14,7 +14,7 @@ brew tap steffakasid/tap
 
 #### awsclean
 
-AWS resource cleanup tools with two commands:
+AWS cleanup tools for stale AMIs and other unused EC2 resources:
 
 ```bash
 # Install awsclean
@@ -24,68 +24,68 @@ brew install steffakasid/tap/awsclean
 brew install steffakasid/tap/amiclean
 ```
 
-**awsclean**: Efficiently clean up unused AWS resources (snapshots, volumes, instances, etc.)  
-**amiclean**: Specialized tool for cleaning up unused AMI images
+**awsclean**: Clean up unused AMIs, unattached EBS volumes, and other stale AWS resources.  
+**amiclean**: Remove unused AMIs that are older than a configurable age.
 
 #### dof
 
-Kubernetes deployment configuration checker and validator
+Manage dotfiles in a bare Git repository
 
 ```bash
 brew install steffakasid/tap/dof
 ```
 
-**dof** validates and checks Kubernetes deployment manifests for best practices and common issues.
+**dof**: Initialize, sync, and check out dotfiles stored in a bare Git repository.
 
 #### govital
 
-Kubernetes Vitality Operator for pod health monitoring and management
+Review Go project dependencies for freshness and maintenance
 
 ```bash
 brew install steffakasid/tap/govital
 ```
 
-**govital** manages pod lifecycle and health checks in Kubernetes clusters.
+**govital**: Scan Go dependencies for outdated versions and inactive maintenance.
 
 #### helmfile-dependency-checker (hdc)
 
-Analyzes Helmfile dependencies and checks for issues
+Check Helmfile chart dependencies for updates and maintenance status
 
 ```bash
 brew install steffakasid/tap/hdc
 ```
 
-**hdc** scans Helmfile configurations for outdated dependencies, version conflicts, and maintenance issues.
+**hdc**: Verify declared Helm chart dependencies are up to date and actively maintained.
 
 #### kubectl-co
 
-Kubectl plugin for cluster operations and configuration management
+Switch between separate kubeconfig files without merging them
 
 ```bash
 brew install steffakasid/tap/kubectl-co
 ```
 
-**kubectl-co** extends kubectl with additional cluster operations and configuration utilities.
+**kubectl-co**: Register, list, and switch isolated kubeconfig files from the kubectl CLI.
 
 #### trivyops
 
-GitLab trivy results scanner and analyzer
+Inspect GitLab Trivy results across groups and subgroups
 
 ```bash
 brew install steffakasid/tap/trivyops
 ```
 
-**trivyops** scans GitLab for trivy vulnerability scanning results and provides analysis and reporting.
+**trivyops**: Collect Trivy job results from GitLab projects and flag missing `.trivyignore` files.
 
 #### wiper
 
-Kubernetes resource cleanup and management tool
+Delete configured files and folders from a directory tree
 
 ```bash
 brew install steffakasid/tap/wiper
 ```
 
-**wiper** removes unused Kubernetes resources and helps manage cluster cleanup.
+**wiper**: Remove files and directories by name or pattern, with optional Trash support.
 
 ## Upgrade All
 
