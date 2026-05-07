@@ -10,6 +10,31 @@ Consolidated Homebrew tap for all steffakasid projects.
 brew tap steffakasid/tap
 ```
 
+### Migrate from legacy taps
+
+If you installed a formula from one of the deprecated taps, untap the old tap,
+add the consolidated tap, and reinstall the formula from its new location.
+
+Example: migrate `awsclean` from `steffakasid/awsclean` to `steffakasid/tap`:
+
+```bash
+brew untap steffakasid/awsclean
+brew tap steffakasid/tap
+brew reinstall awsclean
+```
+
+If the formula is not installed yet, replace `reinstall` with `install`.
+
+Legacy tap to new formula mapping:
+
+- `steffakasid/awsclean` -> `steffakasid/tap/awsclean`
+- `steffakasid/dof` -> `steffakasid/tap/dof`
+- `steffakasid/govital` -> `steffakasid/tap/govital`
+- `steffakasid/hdc` -> `steffakasid/tap/hdc`
+- `steffakasid/kubectl-co` -> `steffakasid/tap/kubectl-co`
+- `steffakasid/trivyops` -> `steffakasid/tap/trivyops`
+- `steffakasid/wiper` -> `steffakasid/tap/wiper`
+
 ### Available Tools
 
 #### awsclean
@@ -19,13 +44,9 @@ AWS cleanup tools for stale AMIs and other unused EC2 resources:
 ```bash
 # Install awsclean
 brew install steffakasid/tap/awsclean
-
-# Install amiclean (AMI cleanup specific tool)
-brew install steffakasid/tap/amiclean
 ```
 
 **awsclean**: Clean up unused AMIs, unattached EBS volumes, and other stale AWS resources.  
-**amiclean**: Remove unused AMIs that are older than a configurable age.
 
 #### dof
 
