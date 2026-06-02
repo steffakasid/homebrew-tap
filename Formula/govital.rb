@@ -5,21 +5,21 @@
 class Govital < Formula
   desc "Check Go dependencies for updates and maintenance activity"
   homepage "https://github.com/steffakasid/govital"
-  version "1.0.1"
+  version "1.1.0"
   license "Apache-2.0"
 
   on_macos do
     on_intel do
-      url "https://github.com/steffakasid/govital/releases/download/v1.0.1/govital_1.0.1_darwin_amd64.tar.gz"
-      sha256 "db7843df4e7442c29b4f8d1396d051c5569fd8a35da2bbe9b6ac0cf28c7bbf3c"
+      url "https://github.com/steffakasid/govital/releases/download/v1.1.0/govital_1.1.0_darwin_amd64.tar.gz"
+      sha256 "8b4244a49f82e53a6b5eada3bdba948f4c80d57a1fee138afc363eee9cb78317"
 
       def install
         bin.install "govital"
       end
     end
     on_arm do
-      url "https://github.com/steffakasid/govital/releases/download/v1.0.1/govital_1.0.1_darwin_arm64.tar.gz"
-      sha256 "71252911f051845c40c94ec94fd24955f2ec8f34b756b4c5838bd0a431de01aa"
+      url "https://github.com/steffakasid/govital/releases/download/v1.1.0/govital_1.1.0_darwin_arm64.tar.gz"
+      sha256 "cfaa0f2cdfe8e19e7034e8c23a84c8357b0408e3d6f7e69c1ed7dc535a11bd46"
 
       def install
         bin.install "govital"
@@ -30,8 +30,8 @@ class Govital < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/steffakasid/govital/releases/download/v1.0.1/govital_1.0.1_linux_amd64.tar.gz"
-        sha256 "146f162c3af0c1f78eb5c4226a946809075b97f9e8efbe1b77cbcaa43f2f3d30"
+        url "https://github.com/steffakasid/govital/releases/download/v1.1.0/govital_1.1.0_linux_amd64.tar.gz"
+        sha256 "05add70ce406d9a086dda7d6ec875899ad730fbc432b8a264e51ba5a9bdc6a56"
 
         def install
           bin.install "govital"
@@ -40,8 +40,8 @@ class Govital < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/steffakasid/govital/releases/download/v1.0.1/govital_1.0.1_linux_arm64.tar.gz"
-        sha256 "5f149a74fd0f7df80558107e1b0ea5ec4eda00a9e8e95d852fa2e83ff3e25573"
+        url "https://github.com/steffakasid/govital/releases/download/v1.1.0/govital_1.1.0_linux_arm64.tar.gz"
+        sha256 "bb0f9c27d4f31484cd6ecdeb5f310e6408e758f4912f3df309abaf32f7038417"
 
         def install
           bin.install "govital"
