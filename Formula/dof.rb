@@ -5,21 +5,21 @@
 class Dof < Formula
   desc "Manage dotfiles in a bare Git repository"
   homepage "https://github.com/steffakasid/trivy-project-scanner"
-  version "1.3.0"
+  version "1.3.1"
   license "Apache-2.0"
 
   on_macos do
     on_intel do
-      url "https://github.com/steffakasid/dof/releases/download/v1.3.0/dof_1.3.0_darwin_amd64.tar.gz"
-      sha256 "3cfbcd594d42a9ba5834573f0d99780a1d8cca07102c6a9eb201164202cbdf04"
+      url "https://github.com/steffakasid/dof/releases/download/v1.3.1/dof_1.3.1_darwin_amd64.tar.gz"
+      sha256 "5a31cc08d406be17f271a460ccead2ef62f4a7effbbe802cb860ab651d87220d"
 
       def install
         bin.install "dof"
       end
     end
     on_arm do
-      url "https://github.com/steffakasid/dof/releases/download/v1.3.0/dof_1.3.0_darwin_arm64.tar.gz"
-      sha256 "dc7219adfc0e04667c6968aa0f4d70d5f66dc17d0f36bccf73ec567d9b5e7248"
+      url "https://github.com/steffakasid/dof/releases/download/v1.3.1/dof_1.3.1_darwin_arm64.tar.gz"
+      sha256 "9906d795b70a03358aae344128c6a6be12add4119933f502d0a01057783a7e02"
 
       def install
         bin.install "dof"
@@ -30,8 +30,8 @@ class Dof < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/steffakasid/dof/releases/download/v1.3.0/dof_1.3.0_linux_amd64.tar.gz"
-        sha256 "757ad2a3fcf3890b1c8a5f9e7bb9f9a3800ca28fb31cc655401df4c2f9975cbb"
+        url "https://github.com/steffakasid/dof/releases/download/v1.3.1/dof_1.3.1_linux_amd64.tar.gz"
+        sha256 "e8a5d8d2896086373def312b1cbe10315d73c853fa440559f25f48ed55934bc6"
 
         def install
           bin.install "dof"
@@ -40,8 +40,8 @@ class Dof < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/steffakasid/dof/releases/download/v1.3.0/dof_1.3.0_linux_arm64.tar.gz"
-        sha256 "fe263713ecbe6ef7eb8435e9c5cbfb141884b76c2727b5d13d893ee44b2e1f67"
+        url "https://github.com/steffakasid/dof/releases/download/v1.3.1/dof_1.3.1_linux_arm64.tar.gz"
+        sha256 "acdb18aad7e5e32035b8cc97f528136203703ac9acff93bd99af5523e1cf5d1d"
 
         def install
           bin.install "dof"
