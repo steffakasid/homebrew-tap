@@ -5,21 +5,21 @@
 class Awsclean < Formula
   desc "Clean unused AMIs, unattached EBS volumes, and other stale AWS resources"
   homepage "https://github.com/steffakasid/trivy-project-scanner"
-  version "1.14.1"
+  version "1.14.2"
   license "Apache-2.0"
 
   on_macos do
     on_intel do
-      url "https://github.com/steffakasid/awsclean/releases/download/v1.14.1/awsclean_1.14.1_darwin_amd64.tar.gz"
-      sha256 "6a8b104f71d702f61408d39917fc3d9589bb6988710a679a30203186d0a08291"
+      url "https://github.com/steffakasid/awsclean/releases/download/v1.14.2/awsclean_1.14.2_darwin_amd64.tar.gz"
+      sha256 "a571fd4a9cb69750e407543c10b4da76815362d4f15c7f125e2b2d15bb170e0c"
 
       def install
         bin.install "awsclean"
       end
     end
     on_arm do
-      url "https://github.com/steffakasid/awsclean/releases/download/v1.14.1/awsclean_1.14.1_darwin_arm64.tar.gz"
-      sha256 "976629daf30439730613800fec176a30b000da7d4350b04def88fd7ec9c86962"
+      url "https://github.com/steffakasid/awsclean/releases/download/v1.14.2/awsclean_1.14.2_darwin_arm64.tar.gz"
+      sha256 "29db0dcd8bf8e68b70915a8e2c228bf8e8c90d3243b7dd7a1e6a5407c283bcd0"
 
       def install
         bin.install "awsclean"
@@ -30,8 +30,8 @@ class Awsclean < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/steffakasid/awsclean/releases/download/v1.14.1/awsclean_1.14.1_linux_amd64.tar.gz"
-        sha256 "e2b7caf6b3fed29863d2548c562d4f0fe0e9d67febd01cd8079d330ce66220de"
+        url "https://github.com/steffakasid/awsclean/releases/download/v1.14.2/awsclean_1.14.2_linux_amd64.tar.gz"
+        sha256 "aa513105e3eb1ab35eee00150ad6f1eaf9597d274e8f6cc6d3233feaadef8c01"
 
         def install
           bin.install "awsclean"
@@ -40,8 +40,8 @@ class Awsclean < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/steffakasid/awsclean/releases/download/v1.14.1/awsclean_1.14.1_linux_arm64.tar.gz"
-        sha256 "209b9b8c742050abab720ff5c82b2f1502de680c78b4152ffdd6d4d4336cb0ff"
+        url "https://github.com/steffakasid/awsclean/releases/download/v1.14.2/awsclean_1.14.2_linux_arm64.tar.gz"
+        sha256 "0ef58c134b7fb39cda3f50621a467f9ebf9bc7529d6652d07cd4e04e39187b05"
 
         def install
           bin.install "awsclean"
