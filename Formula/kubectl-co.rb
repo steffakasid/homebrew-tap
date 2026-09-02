@@ -5,21 +5,21 @@
 class KubectlCo < Formula
   desc "Switch between separate kubeconfig files from kubectl"
   homepage "https://github.com/steffakasid/kubectl-go"
-  version "1.1.1"
+  version "1.1.2"
   license "Apache-2.0"
 
   on_macos do
     on_intel do
-      url "https://github.com/steffakasid/kubectl-co/releases/download/v1.1.1/kubectl-co_1.1.1_darwin_amd64.tar.gz"
-      sha256 "2302fd079d4402e798b193db587cc521a20f39afaf9760e72025bb0e8cdd0de3"
+      url "https://github.com/steffakasid/kubectl-co/releases/download/v1.1.2/kubectl-co_1.1.2_darwin_amd64.tar.gz"
+      sha256 "b8c96b67e4ef0a382b14304f86c5a688d1a2b7fa12fba7fdc7c22ee80b4172e1"
 
       def install
         bin.install "kubectl-co"
       end
     end
     on_arm do
-      url "https://github.com/steffakasid/kubectl-co/releases/download/v1.1.1/kubectl-co_1.1.1_darwin_arm64.tar.gz"
-      sha256 "8ec89f755d43231c54c7a07b5f89b906bd77bdd599a2ce07804a49ee40b037ab"
+      url "https://github.com/steffakasid/kubectl-co/releases/download/v1.1.2/kubectl-co_1.1.2_darwin_arm64.tar.gz"
+      sha256 "febc07e132b725e13fadfad7d176f9963c2540d7fd157122d3a9d1cafb41dd79"
 
       def install
         bin.install "kubectl-co"
@@ -30,8 +30,8 @@ class KubectlCo < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/steffakasid/kubectl-co/releases/download/v1.1.1/kubectl-co_1.1.1_linux_amd64.tar.gz"
-        sha256 "63fb244a4df415fb3d2ea8889209185c73ba0febeaa15f3ee43118ed32e8a20a"
+        url "https://github.com/steffakasid/kubectl-co/releases/download/v1.1.2/kubectl-co_1.1.2_linux_amd64.tar.gz"
+        sha256 "dd894fd1ae863499493128468d96ed673057a5e430f17d7a62966a43f68d081f"
 
         def install
           bin.install "kubectl-co"
@@ -40,8 +40,8 @@ class KubectlCo < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/steffakasid/kubectl-co/releases/download/v1.1.1/kubectl-co_1.1.1_linux_arm64.tar.gz"
-        sha256 "074eb40bd99ab2a0a161f86976a12fbb545ebfe05776bf500eaf9bf5aa9e798d"
+        url "https://github.com/steffakasid/kubectl-co/releases/download/v1.1.2/kubectl-co_1.1.2_linux_arm64.tar.gz"
+        sha256 "058059ab1e9dfed5d4084eb538ddb139d71006f59e60c294c9d90cb67457a2a8"
 
         def install
           bin.install "kubectl-co"
