@@ -5,21 +5,21 @@
 class Hdc < Formula
   desc "Check Helmfile chart dependencies for updates and maintenance status"
   homepage "https://github.com/steffakasid/helmfile-dependency-checker"
-  version "1.1.3"
+  version "1.1.4"
   license "Apache-2.0"
 
   on_macos do
     on_intel do
-      url "https://github.com/steffakasid/helmfile-dependency-checker/releases/download/v1.1.3/hdc_1.1.3_darwin_amd64.tar.gz"
-      sha256 "89b5823fd586469cc5f8aee5d94150e21bb8e9ff539fd909c98b443a5b613bb4"
+      url "https://github.com/steffakasid/helmfile-dependency-checker/releases/download/v1.1.4/hdc_1.1.4_darwin_amd64.tar.gz"
+      sha256 "e472b7f7f788c3a69cb26450e5a5b57d8ef8326da2b7e53020ee6bc625125890"
 
       def install
         bin.install "hdc"
       end
     end
     on_arm do
-      url "https://github.com/steffakasid/helmfile-dependency-checker/releases/download/v1.1.3/hdc_1.1.3_darwin_arm64.tar.gz"
-      sha256 "983a6929e45b657f2a63438b821be30bf525bc3828241da84ce0a751471ee791"
+      url "https://github.com/steffakasid/helmfile-dependency-checker/releases/download/v1.1.4/hdc_1.1.4_darwin_arm64.tar.gz"
+      sha256 "8470f2c91868bca847cdf91d72c00539236bb95803fc3081d30aad587e0148a9"
 
       def install
         bin.install "hdc"
@@ -30,8 +30,8 @@ class Hdc < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/steffakasid/helmfile-dependency-checker/releases/download/v1.1.3/hdc_1.1.3_linux_amd64.tar.gz"
-        sha256 "e36319ea946c5acb525f7cae33b4b7820336f63d1728cd5d30e548381924bc0a"
+        url "https://github.com/steffakasid/helmfile-dependency-checker/releases/download/v1.1.4/hdc_1.1.4_linux_amd64.tar.gz"
+        sha256 "2321f8135747d0f8e21f911b9d09357ea922bdc3b975212369e9c2ad82ec7f1f"
 
         def install
           bin.install "hdc"
@@ -40,8 +40,8 @@ class Hdc < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/steffakasid/helmfile-dependency-checker/releases/download/v1.1.3/hdc_1.1.3_linux_arm64.tar.gz"
-        sha256 "b6926c032a80d8817dc6f076140e196af712ce4e9a52042438a306ab0345db88"
+        url "https://github.com/steffakasid/helmfile-dependency-checker/releases/download/v1.1.4/hdc_1.1.4_linux_arm64.tar.gz"
+        sha256 "1f74a6ca88cc90d8d637a561b64c624758efaadb1de93ef1009e2dbb4d824050"
 
         def install
           bin.install "hdc"
