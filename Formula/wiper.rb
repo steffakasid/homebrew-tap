@@ -5,21 +5,21 @@
 class Wiper < Formula
   desc "Delete configured files and folders by name or pattern"
   homepage "https://github.com/steffakasid/wiper"
-  version "1.1.2"
+  version "1.1.3"
   license "Apache-2.0"
 
   on_macos do
     on_intel do
-      url "https://github.com/steffakasid/wiper/releases/download/v1.1.2/wiper_1.1.2_darwin_amd64.tar.gz"
-      sha256 "3bc002223781a59ff62d6035827d387754d7e401e506adc60d2e818ae5df1a18"
+      url "https://github.com/steffakasid/wiper/releases/download/v1.1.3/wiper_1.1.3_darwin_amd64.tar.gz"
+      sha256 "f7522dfd19e2a42af4049c28a492b4ac2bfb5d97435345dbaecdbbd497863dde"
 
       def install
         bin.install "wiper"
       end
     end
     on_arm do
-      url "https://github.com/steffakasid/wiper/releases/download/v1.1.2/wiper_1.1.2_darwin_arm64.tar.gz"
-      sha256 "a091d04d3285dc9f300a48e9068ba333c8865a9720063065b899f1f4ff27b476"
+      url "https://github.com/steffakasid/wiper/releases/download/v1.1.3/wiper_1.1.3_darwin_arm64.tar.gz"
+      sha256 "54f00bf88754c0bef1fd77976c88c056836c5df693d965d1e58dd5d1704c3140"
 
       def install
         bin.install "wiper"
@@ -30,8 +30,8 @@ class Wiper < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/steffakasid/wiper/releases/download/v1.1.2/wiper_1.1.2_linux_amd64.tar.gz"
-        sha256 "36894809e1b95c666eb9fbccc40738066c169382de1f158d2c9081fb63bdefd3"
+        url "https://github.com/steffakasid/wiper/releases/download/v1.1.3/wiper_1.1.3_linux_amd64.tar.gz"
+        sha256 "cdd6b859ca6a607e2fe7913c90e03b062d431f037165ba675aa8d41ceefe8916"
 
         def install
           bin.install "wiper"
@@ -40,8 +40,8 @@ class Wiper < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/steffakasid/wiper/releases/download/v1.1.2/wiper_1.1.2_linux_arm64.tar.gz"
-        sha256 "988f0a337f0032c82dd904ab340cd337eabecc58b1ba734059126e062b54b345"
+        url "https://github.com/steffakasid/wiper/releases/download/v1.1.3/wiper_1.1.3_linux_arm64.tar.gz"
+        sha256 "ba2aab3e1948678784728da9966de4c2fd5d8310a8b9449136a508bf7baef823"
 
         def install
           bin.install "wiper"
